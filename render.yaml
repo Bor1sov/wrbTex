@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: bor1sov
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    env: node

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="./scripts/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Моё Портфолио</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li>
+                        <a href="#" id="cart-btn" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="mobile-menu-btn">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Корзина -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Корзина</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <p>Всего товаров: <span id="total-count">0</span></p>
+                <button id="clear-cart" class="btn">Очистить корзину</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно товара -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content product-modal-content">
+            <span class="close">&times;</span>
+            <div class="product-modal-img">
+                <img id="product-img" src="" alt="">
+            </div>
+            <div class="product-modal-info">
+                <h2 id="product-title"></h2>
+                <p id="product-description"></p>
+                <p id="product-tech"></p>
+                <button id="add-to-cart" class="btn">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Привет, я Борисов Егор Алексеевич</h1>
+                    <p>Студент ВГУ, факультета компьютерных наук, направления ИСиТ,1 курс, группа 2.1</p>
+                    <a href="#portfolio" class="btn">Посмотреть работы</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">Обо мне</h2>
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="./assets/photo_2024-12-21_01-51-28.jpg" alt="Моё фото">
+                    </div>
+                    <div class="about-text">
+                        <h3>Кто я</h3>
+                        <p>Я Борисов Егор Алексеевич, Студент 1 курса. Специализируюсь на frontend разработке. Моя страсть - создавать сайты, которые не только красивы, но и функциональны.</p>
+                        
+                        <div class="skills">
+                            <h3>Мои навыки</h3>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>HTML/CSS</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>JavaScript</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>React</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="section-title">Мои работы</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="./assets/e6f0b476695ccbd8065ca53c5e9a91d9d8f3750d-1733592143.webp" alt="Проект 1">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Путешествия по России</h3>
+                            <p>HTML + CSS + JS + Node JS</p>
+                            <a href="#" class="btn">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="./assets/Снимок экрана 2025-05-04 134609.png" alt="Проект 2">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Магазин техники</h3>
+                            <p>HTML + CSS + TS + Node JS + REACT</p>
+                            <a href="#" class="btn">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="./assets/Снимок экрана 2025-05-04 134653.png" alt="Проект 3">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Argonia</h3>
+                            <p>HTML + CSS + JS + PHP + WordPress</p>
+                            <a href="#" class="btn">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="./assets/Снимок экрана 2025-05-04 134719.png" alt="Проект 4">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>SEO</h3>
+                            <p>HTML + CSS + JS + PHP + WordPress</p>
+                            <a href="#" class="btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">Свяжитесь со мной</h2>
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Тема</label>
+                    <input type="text" id="subject" name="subject" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <a href="mailto:dddelymodev@gmail.com" id="sendEmail" class="btn">Отправить письмо</a>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Bor1sov. Все права не защищены.</p>
+        <ul class="social-links">
+            <li><a href="https://github.com/Bor1sov"><i class="fab fa-github"></i> GitHub</a></li>
+        </ul>
+        <p id="last-visit"></p>
+    </div>
+</footer>
+</body>
+</html>
